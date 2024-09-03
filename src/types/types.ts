@@ -1,26 +1,40 @@
 export type VoiceEvents =
-  | "click on" // Click on elements
-  | "submit form" // Form submissions
-  | "navigate to" // Navigating to URLs or routes
-  | "back" // Navigating back in the browser
-  | "forward" // Navigating forward in the browser
-  | "fill out" // Enter or update text in an input field
-  | "clear" // Clear text input fields
-  | "scroll top"
+  | "click on"
+  | "navigate to"
+  | "back"
+  | "forward"
+  | "fill out"
+  | "clear"
+  | "scroll up"
   | "scroll down"
-  | "refresh page"; // Refresh the current page
+  | "refresh page"
+  | "up"
+  | "down"
+  | "focus on";
 
 export const voiceCommands: string[] = [
   "click on",
-  "submit form",
   "navigate to",
   "back",
   "forward",
   "fill out",
   "clear",
-  "maximize",
-  "minimize",
-  "scroll top",
+  "scroll up",
   "scroll down",
   "refresh page",
+  "up",
+  "down",
+  "focus on",
 ];
+
+export interface VoiceRecognitionConfig {
+  scrollAmount?: number;
+  language?: string;
+  continuous?: boolean;
+  interimResults?: boolean;
+  grammar?: string;
+  autoStart?: boolean;
+}
+
+export const grammars: string =
+  "#JSGF V1.0; grammar commands; public <command> = click on | focus | navigate to | back | forward | fill out | clear | scroll down | scroll up | refresh ;";

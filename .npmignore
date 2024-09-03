@@ -5,6 +5,9 @@ node_modules/
 dist/
 *.d.ts
 
+# Vite config
+vite.config.ts
+
 # TypeScript build info
 *.tsbuildinfo
 
@@ -13,10 +16,12 @@ dist/
 
 # Environment files
 .env
+.env.*
 
 # IDE and editor settings
 .idea/
 .vscode/
+*.swp
 
 # OS-specific files
 .DS_Store
