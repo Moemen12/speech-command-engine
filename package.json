@@ -1,9 +1,9 @@
 {
-  "name": "voice-package",
-  "version": "1.0.0",
-  "main": "dist/index.js",
+  "name": "speech-command-engine",
+  "version": "1.0.5",
+  "main": "dist/esm/index.js",
   "module": "dist/esm/index.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/esm/index.d.ts",
   "description": "A package for handling voice commands and speech recognition.",
   "scripts": {
     "build": "tsc",
@@ -11,6 +11,7 @@
   },
   "files": [
     "dist",
+    "README.md",
     "LICENSE"
   ],
   "keywords": [
