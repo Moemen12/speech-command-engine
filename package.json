@@ -4,7 +4,10 @@
   "main": "dist/esm/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
-  "description": "A package for handling voice commands and speech recognition.",
+  "description": "A package for handling voice commands and speech ,recognition.",
+  "repository": {
+    "url": "https://github.com/Moemen12/speech-command-engine"
+  },
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build"
